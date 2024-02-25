@@ -1,6 +1,9 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --yellow: #fff804;
+  --grey: #81836c;
+  --pink: #e280ff;
 }
 
 *,
@@ -10,8 +13,92 @@ html {
   border: 0;
   box-sizing: border-box;
   list-style: none;
+  color: var(--black);
+  font-family: "Open Sans", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
 
   header {
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    div ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+
+      li:last-child a {
+        background-color: var(--black);
+        padding: 15px 35px;
+        border-radius: 30px;
+        color: var(--white);
+      }
+    }
+  }
+
+  #hero-banner {
+    widdth: 100vw;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    #hero-banner-up {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      #hero-banner-text {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        padding-left: 20px;
+
+        span {
+          text-transform: uppercase;
+          border: 2px solid var(--black);
+          padding: 5px;
+        }
+      }
+
+      img {
+        width: 60%;
+        height: auto;
+      }
+    }
   }
 }
