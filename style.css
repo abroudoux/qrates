@@ -115,7 +115,7 @@ html {
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
     font-size: 1.25rem;
-    padding: 7.5vh 0;
+    padding: 10vh 0;
     font-weight: 500;
   }
 
@@ -246,6 +246,91 @@ html {
       font-size: 1.25rem;
       border: 2px solid var(--black);
       background-color: var(--white);
+    }
+  }
+
+  footer {
+    width: 100vw;
+    background-color: var(--black);
+    color: var(--white);
+
+    #footer-links {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 15vw;
+      padding: 2.5vh 7.5vw;
+
+      p {
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        dispaly: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          color: var(--white);
+        }
+      }
+    }
+
+    #footer-down {
+      margin-top: 10vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      padding: 5vh 5vw;
+      justify-content: space-start;
+
+      #logo a {
+        width: 50%;
+
+        img {
+          width: 350px;
+          height: 200px;
+        }
+      }
+
+      div {
+        width: 50%;
+
+        ul:first-child {
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          gap: 15px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+
+        ul:last-child {
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          gap: 15px;
+          margin-top: 2.5vh;
+
+          li {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 500;
+
+            &:last-child {
+              margin-left: 1vw;
+            }
+          }
+      }
     }
   }
 }
